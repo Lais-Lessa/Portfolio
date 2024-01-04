@@ -7,14 +7,37 @@ const config: Config = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamily: {
+      sans: ['var(--font-inter)', 'sans-serif'],
+    },
     extend: {
       backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+        'background-image': "url('/images/background.png')",
+      },
+      fontFamily: {
+        mono: ['var(--font-plex-mono)', 'monospace'],
+      },
+      boxShadow: {
+        'button': '0px 0px 68px 7px rgba(0,191,255,0.4)',
+      },
+      colors: {
+        white:{
+          'white': '#ffffff',
+          'silver': '#fbf9ec',
+        },
+        gray:{
+          'gray-primary': '#a6a1a1',
+          'gray-secundary': '#efe7e5',
+          'logo': '#11111f'
+        },
+        blue: {
+          'blue-bg': '#0e2549',
+        }
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('tailwindcss-gradients'),
+  ],
 }
 export default config
