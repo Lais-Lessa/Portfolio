@@ -3,6 +3,7 @@ import { Tech } from "@/app/components/tech-badge"
 import Image from "next/image"
 import { HiArrowNarrowRight } from "react-icons/hi"
 
+
 export const ProjectCard = () => {
     return (
         <div className="flex gap-6 lg:gap-12 flex-col lg:flex-row">
@@ -38,7 +39,7 @@ export const ProjectCard = () => {
                     <Tech name="Next.js" />
                 </div>
 
-                <Link href="/projects/book-wise">
+                <Link href="/projects">
                 Ver projeto
                 <HiArrowNarrowRight />
                 </Link>
