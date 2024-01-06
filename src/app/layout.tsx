@@ -5,7 +5,17 @@ import { ContactForm } from './components/contact-form'
 import { Footer } from './components/footer'
 import { BackToUp } from './components/back-to-top'
  
- 
+export const metadata = {
+  title: {
+    default: "Portifólio",
+    template: '%s | Laís Lessa'
+  },
+  icons: [
+    {
+      url: '/logo.png'
+    }
+  ]
+}
 const inter = Inter({
   variable: '--font-inter',
   subsets: ['latin'],

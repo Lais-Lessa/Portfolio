@@ -9,11 +9,11 @@ import { TbBrandGithub, TbBrandLinkedin, TbBrandWhatsapp } from 'react-icons/tb'
 
 const MOCK_CONTACTS = [
     {
-        url: 'http://github.com.br',
+        url: 'https://github.com/Lais-Lessa',
         icon: <TbBrandGithub />
     },
     {
-        url: 'http://github.com.br',
+        url: 'https://www.linkedin.com/in/lais-lessa/',
         icon: <TbBrandLinkedin  />
     },
     {
@@ -40,12 +40,8 @@ export const HeroSection = () => {
                     <h2 className="text-[40px] font-medium mt-2">Laís Lessa</h2>
 
                     <p className="text-gray-300 my-6 text-sm sm:text-base">Sou uma desenvolvedora fullstack, no início da minha jornada no mundo do Desenvolvimento Web. Descobri minha paixão por tecnologia e estou animada para aprofundar meus conhecimentos e enfrentar desafios. Busco constantemente aprender e contribuir para projetos inovadores. Estou entusiasmada em fazer parte dessa comunidade dinâmica e colaborativa, pronta para explorar e crescer neste empolgante campo da tecnologia.</p>
-
-                    <div className="flex flex-wrap gap-x-2 gap-y-3 lg:max-w-[340px]">
-                        {Array.from({ length: 7}).map((_, index) => (
-                            <Tech name="Next.js"/>
-                        ))}
-                    </div>
+                
+                    <Tech name="Next.js"/>
 
                     <div className="mt-4 lg:mt-6 flex sm:items-center sm:gap-5 flex-col sm:flex-row">
                         <Button className="w-max shadow-button" onClick={handleContact}>

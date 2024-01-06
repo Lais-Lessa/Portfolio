@@ -2,18 +2,21 @@ import { Link } from "@/app/components/link"
 import { Tech } from "@/app/components/tech-badge"
 import Image from "next/image"
 import { HiArrowNarrowRight } from "react-icons/hi"
+import { TbBrandGithub } from "react-icons/tb"
 
 
 export const ProjectCard = () => {
     return (
         <div className="flex gap-6 lg:gap-12 flex-col lg:flex-row">
-            <div className="w-full h-full">
+            <div className="rounded-lg flex bg-gray-800 overflow-hidden border-2 border-gray-800 hover:border-sky-500 opacity-70 hover:opacity-100 transition-all group">
+                <div w-full h-48 overflow-hidden>
                 <Image 
                 width={420}
                 height={304}
                 src="/images/contactHub.jpeg"
                 alt="Imagem"
-                className="w-fullh-[200px] sm:h-[300px] lg:w-[420px] lg:min-h-full object-cover rounded-lg opacity-60"/>
+                className="w-full h-full object-cover group-hover:scale-110 duration-500 transition-all"/>
+                </div>
             </div>
 
             <div>
@@ -36,12 +39,11 @@ export const ProjectCard = () => {
                     <Tech name="Next.js" />
                     <Tech name="Next.js" />
                     <Tech name="Next.js" />
-                    <Tech name="Next.js" />
                 </div>
 
-                <Link href="/projects">
+                <Link href="https://github.com/Lais-Lessa">
                 Ver projeto
-                <HiArrowNarrowRight />
+                <TbBrandGithub />
                 </Link>
             </div>
         </div>
