@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 
-
 body {
   @apply bg-background-image bg-no-repeat bg-cover
   text-white-silver

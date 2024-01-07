@@ -9,7 +9,6 @@ type KnownTechProps = {
     }
 }
 
-
 export const KnownTech = ({ tech }: KnownTechProps) => {
 
     const relativeTime = getRelativeTimeString(new Date(tech.startDate), 'pt-BR',

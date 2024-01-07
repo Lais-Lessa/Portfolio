@@ -1,4 +1,5 @@
 'use client'
+
 import { Link } from "@/app/components/link"
 import Image from "next/image"
 import { TbBrandGithub } from "react-icons/tb"
@@ -12,7 +13,6 @@ export const ProjectCard = () => {
         exit: { opacity: 0, y: 50 },
 
     }
-
 
     return (
         <motion.div
