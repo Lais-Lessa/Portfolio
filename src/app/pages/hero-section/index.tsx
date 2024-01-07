@@ -81,10 +81,11 @@ export const HeroSection = () => {
                     whileInView={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: 200, scale: 0.5 }}
                     transition={{ duration: 0.5 }}
+                    className="origin-center grid place-items-center w-full h-full lg:max-w-[530px]"
                 >
-                    <Image className="w-[400px] h-[400px] lg:w[600px] lg:h-[600px] mb-6 lg:mb-0 shadow-2xl object-cover  "
-                        width={600}
-                        height={600}
+                    <Image className="rounded-full w-[400px] h-[400px] lg:w[420px] lg:h-[404px] mb-6 lg:mb-0 shadow-2xl object-cover"
+                        width={428}
+                        height={404}
                         src={"/images/lais.JPG"}
                         alt="Foto de Laís Lessa"
                     />
