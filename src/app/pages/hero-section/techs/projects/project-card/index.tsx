@@ -1,51 +1,74 @@
+'use client'
 import { Link } from "@/app/components/link"
-import { Tech } from "@/app/components/tech-badge"
 import Image from "next/image"
-import { HiArrowNarrowRight } from "react-icons/hi"
 import { TbBrandGithub } from "react-icons/tb"
-
+import { motion } from 'framer-motion'
 
 export const ProjectCard = () => {
+
+    const animProps = {
+        initial: { opacity: 0, y: 10 },
+        whileInView: { opacity: 1, y: 0 },
+        exit: { opacity: 0, y: 50 },
+
+    }
+
+
     return (
-        <div className="flex gap-6 lg:gap-12 flex-col lg:flex-row">
-            <div className="rounded-lg flex bg-gray-800 overflow-hidden border-2 border-gray-800 hover:border-sky-500 opacity-70 hover:opacity-100 transition-all group">
-                <div w-full h-48 overflow-hidden>
-                <Image 
-                width={420}
-                height={304}
-                src="/images/contactHub.jpeg"
-                alt="Imagem"
-                className="w-full h-full object-cover group-hover:scale-110 duration-500 transition-all"/>
-                </div>
+        <motion.div
+            className="flex gap-6 lg:gap-12 flex-col lg:flex-row"
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 100 }}
+            transition={{ duration: 0.5 }}
+        >
+            <div className="flex gap-6 lg:gap-12 flex-col lg:flex-row">
+                <motion.div className="w-full h-[200px] sm:h-[300px] lg:w-[420px] lg:min-h-full relative overflow-hidden rounded-lg"
+                    initial={{ opacity: 0, y: 100, scale: 0.5 }}
+                    whileInView={{ opacity: 1, y: 0, scale: 1 }}
+                    exit={{ opacity: 0, y: 100, scale: 0.5 }}
+                    transition={{ duration: 0.3, delay: 0.3 }}
+                >
+                    <Image
+                        width={600}
+                        height={600}
+                        src="/images/contactHub.png"
+                        alt="Imagem"
+                        className="w-full h-full object-cover rounded-lg opacity-80" />
+                </motion.div>
             </div>
 
             <div>
-                <h3 className="flex items-center gap-3 font-medium text-lg text-gray-50">
+                <motion.h3 className="flex items-center gap-3 font-medium text-lg text-gray-50"
+                    {...animProps}
+                    transition={{ duration: 0.7 }}>
                     <Image
-                    width={30}
-                    height={30}
-                    src={"/images/iconetecnologia.png"}
-                    alt=""
+                        width={30}
+                        height={30}
+                        src={"/images/iconetecnologia.png"}
+                        alt=""
                     />
                     ContactHub
-                </h3>
+                </motion.h3>
 
-                <p className="text-gray-400 my-6">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt animi ad distinctio! Corporis officiis minima omnis accusamus voluptatem dicta assumenda, atque eos laboriosam dolor placeat, maxime ducimus aperiam voluptates vel.
-                </p>
+                <motion.p className="text-gray-400 my-6"
+                    {...animProps}
+                    transition={{ duration: 0.2, delay: 0.3 }}>
+                O projeto ContactHub é uma aplicação completa que utiliza TypeScript e React para criar uma solução eficiente no frontend e backend. Desenvolvi um sistema CRUD robusto utilizando o TypeORM como ORM (Object-Relational Mapping) e um banco de dados PostgreSQL para armazenar os dados dos clientes e seus contatos. A aplicação permite o cadastro, leitura, atualização e exclusão de informações, proporcionando uma experiência completa de gerenciamento de dados para os usuários.
+                </motion.p>
 
-                <div className="flex gap-x-2 gap-y-3 flex-wrap mb-8 lg:">
-                    <Tech name="Next.js" />
-                    <Tech name="Next.js" />
-                    <Tech name="Next.js" />
-                    <Tech name="Next.js" />
-                </div>
+                <div className="flex gap-x-2 gap-y-3 flex-wrap lg:max-w-[350px] mb-8">
+                    <span className="bg-sky-700/80 text-sm text-slate-200 font-bold py-1 px-3 rounded-lg"> React </span>
+                    <span className="bg-sky-700/80 text-sm text-slate-200 font-bold py-1 px-3 rounded-lg"> TypeScript </span>
+                    <span className="bg-sky-700/80 text-sm text-slate-200 font-bold py-1 px-3 rounded-lg"> Postgres </span>
+                    </div>
 
-                <Link href="https://github.com/Lais-Lessa">
-                Ver projeto
-                <TbBrandGithub />
+                <Link href="https://github.com/Lais-Lessa" target="_blank">
+                    Ver projeto
+                    <TbBrandGithub />
                 </Link>
             </div>
-        </div>
+        </motion.div>
     )
 }
+

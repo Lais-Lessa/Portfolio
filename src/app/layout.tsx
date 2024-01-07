@@ -4,15 +4,15 @@ import { Header } from './components/header'
 import { ContactForm } from './components/contact-form'
 import { Footer } from './components/footer'
 import { BackToUp } from './components/back-to-top'
+import { Toaster } from './components/toaster'
  
 export const metadata = {
   title: {
-    default: "Portifólio",
-    template: '%s | Laís Lessa'
+    default: "Portifólio Laís Lessa",
   },
   icons: [
     {
-      url: '/logo.png'
+      url: 'front/public/images/iconetecnologia.png'
     }
   ]
 }
@@ -35,6 +35,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR" className={`${inter.variable} ${plexMono.variable}`}>
       <body>
+        <Toaster />
         <BackToUp />
         <Header />
         {children}
