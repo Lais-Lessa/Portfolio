@@ -8,7 +8,7 @@ import { Toaster } from './components/toaster'
  
 export const metadata = {
   title: {
-    default: "Portifólio Laís Lessa",
+    default: "Portfólio Laís Lessa",
   },
   icons: [
     {

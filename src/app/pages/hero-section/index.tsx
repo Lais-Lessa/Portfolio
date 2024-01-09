@@ -7,6 +7,7 @@ import { HiArrowNarrowRight } from 'react-icons/hi'
 import { TbBrandGithub, TbBrandLinkedin, TbBrandWhatsapp } from 'react-icons/tb'
 import { motion } from 'framer-motion'
 
+
 const MOCK_CONTACTS = [
     {
         url: 'https://github.com/Lais-Lessa',
