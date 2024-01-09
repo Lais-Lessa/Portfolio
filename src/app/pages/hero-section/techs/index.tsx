@@ -73,7 +73,7 @@ const knownTechs = [
 
 export const Techs = () => {
     return (
-        <section className="py-16 container">
+        <section className="py-16 container mb-20">
             <SectionTitle subtitle="experiências" title="Conhecimentos" />
             <div className="grid grid-cols-[repeat(auto-fit,minmax(264px,1fr))] gap-3 mt-[60px]">
                 {knownTechs.map((tech, index) => (

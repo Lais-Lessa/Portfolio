@@ -4,6 +4,7 @@ import { Link } from "@/app/components/link"
 import Image from "next/image"
 import { TbBrandGithub } from "react-icons/tb"
 import { motion } from 'framer-motion'
+import  ContactHub from "../../../../../../../public/images/ContactHub.png"
 
 export const ProjectCard = () => {
 
@@ -16,14 +17,14 @@ export const ProjectCard = () => {
 
     return (
         <motion.div
-            className="flex gap-6 lg:gap-12 flex-col lg:flex-row"
+            className="flex gap-6 lg:gap-12 flex-col lg:flex-row "
             initial={{ opacity: 0, y: 100 }}
             whileInView={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 100 }}
             transition={{ duration: 0.5 }}
         >
             <div className="flex gap-6 lg:gap-12 flex-col lg:flex-row">
-                <motion.div className="w-full h-[200px] sm:h-[300px] lg:w-[420px] lg:min-h-full relative overflow-hidden rounded-lg"
+                <motion.div className="w-full h-[200px] sm:h-[300px] lg:w-[420px] lg:min-h-full object-contain overflow-hidden rounded-lg"
                     initial={{ opacity: 0, y: 100, scale: 0.5 }}
                     whileInView={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: 100, scale: 0.5 }}
@@ -32,14 +33,14 @@ export const ProjectCard = () => {
                     <Image
                         width={600}
                         height={600}
-                        src="/images/contactHub.png"
+                        src={ContactHub}
                         alt="Imagem"
-                        className="w-full h-full object-cover rounded-lg opacity-80" />
+                        className="w-full h-full object-fill rounded-lg opacity-80" />
                 </motion.div>
             </div>
 
             <div>
-                <motion.h3 className="flex items-center gap-3 font-medium text-lg text-gray-50"
+                <motion.h3 className="flex items-center gap-3 font-medium text-lg text-gray-50 "
                     {...animProps}
                     transition={{ duration: 0.7 }}>
                     <Image

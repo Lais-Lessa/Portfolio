@@ -27,9 +27,8 @@ export const ContactForm = () => {
     })
 
     const onSubmit = async (data: ContactFormData) => {
-        console.log('Início da função POST');
         try {
-            await axios.post('/pages/api/contact', data)
+            await axios.post('pages/api/contact', data)
             toast.success('Mensagem enviada com sucesso!')
             reset()
         } catch (error) {

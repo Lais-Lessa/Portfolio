@@ -10,11 +10,8 @@ const bodySchema = z.object({
 
 
 const WEBHOOK_URL = process.env.WEBHOOK_URL!
-console.log(WEBHOOK_URL)
 
 export async function POST(request: Request) {
-  console.log('Início da função POST');
-  console.log('WEBHOOK_URL:', WEBHOOK_URL);
     try{
         const body = await request.json()
         const {name, email, message} = bodySchema.parse(body)
@@ -42,7 +39,8 @@ export async function POST(request: Request) {
                     ]
                   }
                 ]
-              };
+              }
+              
               await axios.post(WEBHOOK_URL, messageData)
 
               return NextResponse.json({
