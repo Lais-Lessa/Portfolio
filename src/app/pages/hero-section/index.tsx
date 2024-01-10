@@ -62,7 +62,7 @@ export const HeroSection = () => {
                             <HiArrowNarrowRight size={18} />
                         </Button>
 
-                        <div className="text-2xl text-gray-600 flex items-center h-20 gap-3">
+                        <div className="text-3xl text-gray-600 flex items-center h-20 gap-3">
                             {MOCK_CONTACTS.map((contact, index) => (
                                 <a
                                     href={contact.url}
@@ -84,7 +84,7 @@ export const HeroSection = () => {
                     transition={{ duration: 0.5 }}
                     className="origin-center grid place-items-center w-full h-full lg:max-w-[530px]"
                 >
-                    <Image className="rounded-full w-[400px] h-[400px] lg:w[420px] lg:h-[404px] mb-6 lg:mb-0 shadow-2xl object-cover"
+                    <Image className="rounded-full  h-[400px] lg:w[420px] lg:h-[404px] mb-6 lg:mb-0 shadow-2xl object-cover"
                         width={428}
                         height={404}
                         src={"/images/lais.JPG"}

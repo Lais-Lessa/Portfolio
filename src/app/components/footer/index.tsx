@@ -18,7 +18,7 @@ const MOCK_CONTACTS = [
 export const Footer = () => {
     return (
         <footer className='h-14 w-full flex items-center justify-center bg-gray-950/80 '>
-                        <div className="text-2xl text-gray-600 flex items-center h-30 gap-3">
+                        <div className="text-4xl text-gray-600 flex items-center h-30 gap-3">
                             {MOCK_CONTACTS.map((contact, index) => (
                                 <a
                                 href={contact.url}
