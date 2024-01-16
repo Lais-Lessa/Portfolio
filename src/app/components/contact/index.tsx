@@ -9,7 +9,7 @@ export const ContactForm = () => {
 
     return (
         <section id="contact" className="w-full max-h-full min-w-[400px] lg:flex lg:flex-row lg:justify-between pb-10 sm:pb-32 py-32 bg-gray-900/70 lg:w-full lg:p-10">
-            <div className="container flex flex-col lg:flex lg:flex-row lg:justify-between lg:w-[1200px]">
+            <div className="container flex flex-col justify-center items-center lg:flex lg:flex-row lg:justify-between lg:w-[1200px]">
             <motion.div
                     className="w-full h-full lg:max-w-[530px] rounded-lg p-10 flex justify-center items-center"
                     initial={{ opacity: 0, x: -100 }}
@@ -39,7 +39,7 @@ export const ContactForm = () => {
                 className="flex items-center justify-center w-[100px] h-[100px] lg:w-auto lg:min-w-[100px] lg:h-[100px] bg-green-500 rounded-full transition-transform transform hover:scale-110 aspect-w-1 aspect-h-1">
                 <i className="text-4xl"><TbBrandWhatsapp  /></i>
                 </a>
-                <p  className="text-gray-400 my-6"> Conecte-se instantaneamente! Toque no ícone do WhatsApp para iniciar uma conversa e explorar possibilidades ilimitadas. Estamos apenas a uma mensagem de distância. </p>
+                <p  className="text-gray-400 my-6 text-center"> Conecte-se instantaneamente! Toque no ícone do WhatsApp para iniciar uma conversa e explorar possibilidades ilimitadas. Estamos apenas a uma mensagem de distância. </p>
                 </div>
 
                 <div className="flex flex-col items-center lg:flex-row lg:gap-10">
@@ -50,7 +50,7 @@ export const ContactForm = () => {
                 className="flex items-center justify-center w-[90px] h-[90px] lg:w-auto lg:min-w-[90px] lg:h-[90px] bg-sky-500 rounded-md transition-transform transform hover:scale-110 aspect-w-1 aspect-h-1">
                 <i className="text-4xl"><TbBrandLinkedin /></i>
                 </a>
-                <p className="text-gray-400 my-6"> Estou interessado em estabelecer conexões significativas e explorar oportunidades colaborativas. Juntos, podemos contribuir para uma rede profissional enriquecedora, compartilhando experiências e conhecimentos.</p>
+                <p className="text-gray-400 my-6 text-center"> Estou interessado em estabelecer conexões significativas e explorar oportunidades colaborativas. Juntos, podemos contribuir para uma rede profissional enriquecedora, compartilhando experiências e conhecimentos.</p>
                 </div>
                 </motion.div>
             </div>
