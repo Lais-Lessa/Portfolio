@@ -9,7 +9,7 @@ export const ContactForm = () => {
 
     return (
         <section id="contact" className="w-full max-h-full min-w-[400px] lg:flex lg:flex-row lg:justify-between pb-10 sm:pb-32 py-32 bg-gray-900/70 lg:w-full lg:p-10">
-            <div className="container flex flex-col-reverse lg:flex lg:justify-between lg:w-[1200px]">
+            <div className="container flex flex-col lg:flex lg:flex-row lg:justify-between lg:w-[1200px]">
             <motion.div
                     className="w-full h-full lg:max-w-[530px] rounded-lg p-10 flex justify-center items-center"
                     initial={{ opacity: 0, x: -100 }}
@@ -24,7 +24,6 @@ export const ContactForm = () => {
                     className="items-center text-center"
                 />
                 </motion.div>
-            </div>
             <motion.div
                     initial={{ opacity: 0, y: 200, scale: 0.5 }}
                     whileInView={{ opacity: 1, y: 0, scale: 1 }}
@@ -32,7 +31,6 @@ export const ContactForm = () => {
                     transition={{ duration: 0.5 }}
                     className="container min-w-[400px] p-10 flex flex-col lg:w-full lg:items-start lg:justify-start lg:flex-col"
                 >
-
                 <div className="flex flex-col items-center mb-20 lg:flex-row lg:gap-10">
                 <a
                 href='https://wa.me/5514996600746?text= Olá! Como posso ajudar você hoje? 😊'
@@ -55,6 +53,7 @@ export const ContactForm = () => {
                 <p className="text-gray-400 my-6"> Estou interessado em estabelecer conexões significativas e explorar oportunidades colaborativas. Juntos, podemos contribuir para uma rede profissional enriquecedora, compartilhando experiências e conhecimentos.</p>
                 </div>
                 </motion.div>
+            </div>
         </section>
     )
 }
