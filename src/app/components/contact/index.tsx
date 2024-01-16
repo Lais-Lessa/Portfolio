@@ -9,7 +9,7 @@ export const ContactForm = () => {
 
     return (
         <section id="contact" className="w-full max-h-full min-w-[400px] lg:flex lg:flex-row lg:justify-between pb-10 sm:pb-32 py-32 bg-gray-900/70 lg:w-full lg:p-10">
-            <div className="container flex flex-col justify-center items-center lg:flex lg:flex-row lg:justify-between lg:w-[1200px]">
+            <div className=" w-full container flex flex-col justify-center items-center lg:flex lg:flex-row lg:justify-between lg:w-[1200px]">
             <motion.div
                     className="w-full h-full lg:max-w-[530px] rounded-lg p-10 flex justify-center items-center"
                     initial={{ opacity: 0, x: -100 }}
@@ -29,9 +29,9 @@ export const ContactForm = () => {
                     whileInView={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: 200, scale: 0.5 }}
                     transition={{ duration: 0.5 }}
-                    className="container min-w-[400px] p-10 flex flex-col lg:w-full lg:items-start lg:justify-start lg:flex-col"
+                    className="min-w-[400px] p-10 flex flex-col lg:w-full lg:items-start lg:justify-start lg:flex-col"
                 >
-                <div className="flex flex-col items-center mb-20 lg:flex-row lg:gap-10">
+                <div className="flex flex-col items-center mb-20 lg:flex-row lg:gap-10 p-10">
                 <a
                 href='https://wa.me/5514996600746?text= Olá! Como posso ajudar você hoje? 😊'
                 target="_blank"
