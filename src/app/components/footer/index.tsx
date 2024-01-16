@@ -10,7 +10,7 @@ const MOCK_CONTACTS = [
         icon: <TbBrandLinkedin  />
     },
     {
-        url: 'http://github.com.br',
+        url: 'https://wa.me/5514996600746?text= Olá! Como posso ajudar você hoje? 😊',
         icon: <TbBrandWhatsapp  />
     }
 ]

@@ -2,7 +2,7 @@
 
 import { Link } from "@/app/components/link"
 import Image from "next/image"
-import { TbBrandGithub } from "react-icons/tb"
+import { TbBrandGithub, TbBrandVercel } from "react-icons/tb"
 import { motion } from 'framer-motion'
 import  ContactHub from "../../../../../../../public/images/ContactHub.png"
 
@@ -63,12 +63,17 @@ export const ProjectCard = () => {
                     <span className="bg-sky-700/80 text-sm text-slate-200 font-bold py-1 px-3 rounded-lg"> TypeScript </span>
                     <span className="bg-sky-700/80 text-sm text-slate-200 font-bold py-1 px-3 rounded-lg"> Postgres </span>
                     </div>
-
+                <div className="flex flex-row lg:max-w-[350px] gap-4 ">
                 <Link href="https://github.com/Lais-Lessa" target="_blank">
-                    Ver projeto
-                    <TbBrandGithub />
+                    <TbBrandGithub className="text-3xl"/>
                 </Link>
+                <Link href=" https://frontend-lais-lessa.vercel.app" target="_blank">
+                    <TbBrandVercel className="text-3xl"/>                
+                </Link>
+                </div>
             </div>
+
+            
         </motion.div>
     )
 }

@@ -18,7 +18,7 @@ const MOCK_CONTACTS = [
         icon: <TbBrandLinkedin />
     },
     {
-        url: 'http://github.com.br',
+        url: 'https://wa.me/5514996600746?text= Olá! Como posso ajudar você hoje? 😊',
         icon: <TbBrandWhatsapp />
     }
 ]
@@ -34,7 +34,7 @@ export const HeroSection = () => {
     }
 
     return (
-        <section className="w-full lg:h-[755px] flex flex-col justify-end pb-10 sm:pb-32 py-32 lg:pb-[80px]">
+        <section className="w-full min-w-[400px] lg:h-[755px] flex flex-col justify-end pb-10 sm:pb-32 py-32 lg:pb-[80px]">
             <div className="container flex items-start justify-between flex-col-reverse lg:flex-row">
                 <motion.div
                     className="w-full h-full lg:max-w-[530px] bg-gray-900/70 rounded-lg p-10 "
@@ -82,9 +82,9 @@ export const HeroSection = () => {
                     whileInView={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: 200, scale: 0.5 }}
                     transition={{ duration: 0.5 }}
-                    className="origin-center grid place-items-center w-full h-full lg:max-w-[530px]"
+                    className="origin-center grid place-items-center w-full h-full  lg:max-w-[530px]"
                 >
-                    <Image className="rounded-full  h-[400px] lg:w[420px] lg:h-[404px] mb-6 lg:mb-0 shadow-2xl object-cover"
+                    <Image className="rounded-full h-[400px] lg:w[420px] lg:h-[404px] mb-6 lg:mb-0 shadow-2xl object-cover"
                         width={428}
                         height={404}
                         src={"/images/lais.JPG"}

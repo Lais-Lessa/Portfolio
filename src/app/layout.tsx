@@ -1,7 +1,7 @@
 import './globals.css'
 import { Inter, IBM_Plex_Mono } from 'next/font/google'
 import { Header } from './components/header'
-import { ContactForm } from './components/contact-form'
+import { ContactForm } from './components/contact'
 import { Footer } from './components/footer'
 import { BackToUp } from './components/back-to-top'
 import { Toaster } from './components/toaster'
