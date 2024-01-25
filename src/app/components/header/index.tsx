@@ -23,7 +23,7 @@ export const Header = () => {
         animate={{ top: 0 }}
         transition={{ duration: 0.5 }}
 >
-            <div className="container flex items-center justify-end">
+            <div className="container flex items-center justify-center lg:justify-end">
 
                 <FiAlignJustify className="text-sky-700 brightness-200" />
                 <nav onClick={ () => handleScrollSection('projects')} className="flex items-center m-5 sm:gap-10">

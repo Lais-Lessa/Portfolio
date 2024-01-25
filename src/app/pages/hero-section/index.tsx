@@ -56,7 +56,7 @@ export const HeroSection = () => {
                         transition={{ duration: 0.5, delay: 0.1 }}
                     />
 
-                    <div className="mt-4 lg:mt-6 flex sm:items-center sm:gap-5 flex-col sm:flex-row">
+                    <div className="mt-4 lg:mt-6 flex items-center sm:items-center sm:gap-5 flex-col sm:flex-row">
                         <Button className="w-max shadow-button" onClick={handleContact}>
                             Entre em Contato
                             <HiArrowNarrowRight size={18} />
@@ -82,9 +82,9 @@ export const HeroSection = () => {
                     whileInView={{ opacity: 1, y: 0, scale: 1 }}
                     exit={{ opacity: 0, y: 200, scale: 0.5 }}
                     transition={{ duration: 0.5 }}
-                    className="origin-center grid place-items-center w-full h-full m-4 lg:max-w-[700px]"
+                    className=" container origin-center grid place-items-center m-4 lg:w-full lg:h-full lg:place-items-center"
                 >
-                    <Image className="rounded-full w-[350px] h-[350px] lg:w[600px] mb-6 lg:mb-0 shadow-2xl object-cover m-4"
+                    <Image className="rounded-full w-[300px] h-[300px] mb-6 lg:mb-0 shadow-2xl object-cover lg:w-[400px] lg:h-[400px]"
                         width={428}
                         height={404}
                         src={"/images/lais.JPG"}

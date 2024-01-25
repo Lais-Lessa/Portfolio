@@ -19,7 +19,7 @@ export const ProjectCard = () => {
     return (
         <>
             <motion.div
-                className="flex gap-6 lg:gap-12 flex-col lg:flex-row"
+                className="flex gap-6 lg:gap-12 flex-col lg:flex-row mb-10"
                 initial={{ opacity: 0, y: 100 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 100 }}
