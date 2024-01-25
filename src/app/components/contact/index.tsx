@@ -31,7 +31,7 @@ export const ContactForm = () => {
                     transition={{ duration: 0.5 }}
                     className="min-w-[400px] p-10 flex flex-col lg:w-full lg:items-start lg:justify-start lg:flex-col"
                 >
-                <div className="flex flex-col items-center mb-20 lg:flex-row lg:gap-10 p-10">
+                <div className="flex flex-col items-center mb-20 lg:flex-row lg:gap-10">
                 <a
                 href='https://wa.me/5514996600746?text= Olá! Como posso ajudar você hoje? 😊'
                 target="_blank"
@@ -50,7 +50,7 @@ export const ContactForm = () => {
                 className="flex items-center justify-center w-[90px] h-[90px] lg:w-auto lg:min-w-[90px] lg:h-[90px] bg-sky-500 rounded-md transition-transform transform hover:scale-110 aspect-w-1 aspect-h-1">
                 <i className="text-4xl"><TbBrandLinkedin /></i>
                 </a>
-                <p className="text-gray-400 my-6 text-center"> Estou interessado em estabelecer conexões significativas e explorar oportunidades colaborativas. Juntos, podemos contribuir para uma rede profissional enriquecedora, compartilhando experiências e conhecimentos.</p>
+                <p className="text-gray-400 my-6 text-center"> Estou interessada em estabelecer conexões significativas e explorar oportunidades colaborativas. Juntos, podemos contribuir para uma rede profissional enriquecedora, compartilhando experiências e conhecimentos.</p>
                 </div>
                 </motion.div>
             </div>
