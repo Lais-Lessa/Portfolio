@@ -64,7 +64,7 @@ export const ProjectCard = () => {
                     <span className="bg-sky-700/80 text-sm text-slate-200 font-bold py-1 px-3 rounded-lg"> Postgres </span>
                     </div>
                 <div className="flex flex-row lg:max-w-[350px] gap-4 ">
-                <Link href="https://github.com/Lais-Lessa" target="_blank">
+                <Link href="https://github.com/Lais-Lessa/FullStackCRUD" target="_blank">
                     <TbBrandGithub className="text-3xl"/>
                 </Link>
                 <Link href=" https://frontend-lais-lessa.vercel.app" target="_blank">
